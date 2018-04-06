@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/form.css">
+</head>
+<style>
+body {
+
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+    }
+    input[type="radio"] {
+      margin-top: -1px;
+      vertical-align: middle;
+    }
+    input[type=text]{
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 2px solid blue;
+      border-radius: 4px;
+    }
+	input[type=password]{
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 2px solid blue;
+      border-radius: 4px;
+	  }
+    input[type=Date]{
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 2px solid blue;
+      border-radius: 4px;
+    }
+
+    input[type=button] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: center;
+      position: relative;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      text-decoration: none;
+      overflow: hidden;
+
+    }
+    input[type=button]:hover {
+    background-color: #45a049;
+  }
+    .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+th, td{
+
+  text-align: center;
+}
+
+</style>
+<body background="bk.jpg">
+<form method="post" action="officer_reg_validation.php">
+	<div>
+<a href="home_page.html"><img src="home.png" height="70" width="70"></a>
+<center>
+<img src="white_emblem.png" height=120 width=90>
+</center>
+</div>
+
+<div style="width: 50%; float:left">
+<input type="text" placeholder="  First Name" id="txtbox" name="firstname" class="txt"autofocus></input><br><br>
+<input type="text" placeholder="  Last Name" id="txtbox" name="lastname" class="txt"></input><br><br>
+<input type="date" placeholder="  Date of Birth" id="txtbox" name="bday" min="1920-01-02" class="txt"></input><br><br>
+Gender : <input type="radio" name="gender" value="male" checked> Male</input>
+<input type="radio" name="gender" value="female"> Female</input>
+<input type="radio" name="gender" value="other"> Others</input><br><br>
+<input type="radio" name="mstatus" value="married" checked> Married</input>
+<input type="radio" name="mstatus" value="unmarried"> Unmarried</input><br><br>
+<input type="text" placeholder="  Username" id="txtbox" name="username" class="txt"></input><br><br>
+<input type="password" placeholder="  Password" id="txtbox" name="password" class="txt"></input><br><br>
+<input type="text" placeholder="  Father/Husband Name" id="txtbox" name="fathername" class="txt"></input><br><br>
+</div>
+
+
+<div style="width: 50%; float:right">
+<input type="text" placeholder="  Address" class="txt" name="address" id="txtbox"></input><br><br>
+<input type="text" placeholder="  District" id="txtbox" name="district" class="txt"></input><br><br>
+<input type="text" placeholder="  State" id="txtbox" name="state" class="txt"></input><br><br>
+<input type="text" placeholder="  PIN CODE" id="txtbox" name="pincode" class="txt"></input><br><br>
+<input type="text" placeholder="  Phone Number" id="txtbox" name="phone" class="txt"></input><br><br>
+<input type="text" placeholder="  Alternate Phone Number" id="txtbox" name="alternatephone" class="txt"></input><br><br>
+<input type="text" placeholder="  Email" id="txtbox" name="email" class="txt"></input></td><br><br>
+<input type = "submit" value="Submit" name="submit"></input><br><br>
+</div>
+</form>
+</body>
+</html>

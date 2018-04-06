@@ -1,0 +1,64 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="style/form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body{
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: cover;
+        }
+
+    input[type=text]{
+          width: 25%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border: 2px solid blue;
+          border-radius: 4px;
+    }
+
+    input[type=password]{
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid blue;
+        border-radius: 4px;
+    }
+/*  @font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+*/
+  * {
+        font-family: Zilap Monograma  ;
+    }
+
+  .w3-button {
+        background-color: #cc0000; text-color:  black;
+        height: 40px;
+        width:90px;
+        color: white;
+        border: 2px solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+  }
+
+</style>
+<body background="India.jpeg"><br>
+  <center><img src="emblem.jpg" height="120" width="90"></center>
+    <form method="post" action="login_validation_officer.php">
+        <div align="center"><br><br><br>
+          <p style="font-size:30px"><b><font color=white>Officer Login</font><b></p>
+            <input type="text" placeholder="  Username" id="txtbox" name="username" class="txt"autofocus></input><br><br>
+            <input type="password" placeholder="  Password" id="txtbox" name="password" class="txt"></input><br><br><br>
+            <input type = "submit" value="Submit" name="submit"></input>
+          </div>
+        </form>
+      </body>
+</html>
